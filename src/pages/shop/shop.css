@@ -62,7 +62,7 @@ ul {
   justify-content: space-around;
 }
 
-/* popup test */
+/* popup */
 
 .popup {
   box-sizing: border-box;
@@ -79,6 +79,30 @@ ul {
 .popup-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 0 15px;
-  border-bottom: 2px solid black;
+  padding: 0 30px 0 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.242);
+}
+
+#closebtn {
+  cursor: pointer;
+}
+.popup-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  margin: 40px;
+}
+.popup-content-left {
+  border-right: 1px solid rgba(0, 0, 0, 0.242);
+}
+.popup-content-left img {
+  height: 400px;
+  width: 400px;
+  margin-right: 40px;
+  object-fit: contain;
+}
+.popup-content-right {
+  justify-self: start;
+  text-align: left;
+  margin: 0 60px 0 40px;
 }
