@@ -13,7 +13,7 @@ export const SingleProduct = (props) => {
         <div onClick={() => handleClickOpenPopup(id)}>
           <img src={image} alt={title} />
           <div className="description">
-            <p>
+            <p className="product-title">
               <b>{title}</b>
             </p>
             <p>${price}</p>
