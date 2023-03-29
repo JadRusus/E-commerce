@@ -1,3 +1,7 @@
+.banner {
+  width: 100%;
+}
+
 .shopTitle {
   text-align: center;
   font-size: 16px;
@@ -55,20 +59,15 @@
 }
 
 .addToCartBttn:hover {
-  background-color: rgb(19, 19, 19);
+  background-color: #4a1f81;
   color: white;
   cursor: pointer;
 }
 .categories {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   font-size: larger;
-}
-ul {
-  width: 50%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
 }
 
 /* popup */
@@ -83,6 +82,7 @@ ul {
   margin-top: 2.5%;
   border-radius: 30px;
   box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.3);
+  overflow: scroll;
 }
 
 .popup-header {
@@ -90,6 +90,8 @@ ul {
   justify-content: space-between;
   padding: 0 30px 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.242);
+  background-color: #602aa7;
+  color: white;
 }
 
 #closebtn {
@@ -141,5 +143,6 @@ ul {
 
 .categoriesbtns .catBtn:hover {
   background-color: #212121;
+  color: #f9ea37;
   background-image: none;
 }

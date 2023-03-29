@@ -18,20 +18,26 @@ export const Cart = () => {
         {fulldata.map((value) => {
           if (cartItems[value.id] !== 0)
             return <CartItem data={value} key={value.id} />;
+          else return <></>;
         })}
       </div>
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p>Total: ${totalAmount}</p>
-
-          <button onClick={() => emptyCart()}>Empty Cart</button>
-          <button>Checkout</button>
+          <p>
+            <b>Total: ${totalAmount}</b>
+          </p>
+          <div>
+            <button onClick={() => emptyCart()}>Empty Cart</button>
+            <button>Checkout</button>
+          </div>
         </div>
       ) : (
         <h1>Cart is Empty</h1>
       )}
-      <div className="checkout">
-        <button onClick={() => nav("/")}>Continue Shopping</button>
+      <div>
+        <button className="backtoshop" onClick={() => nav("/")}>
+          Continue Shopping
+        </button>
       </div>
     </div>
   );

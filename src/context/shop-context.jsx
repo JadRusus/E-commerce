@@ -89,8 +89,6 @@ export const ShopContextProvider = (props) => {
     closePopup,
   };
 
-  console.log("");
-
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

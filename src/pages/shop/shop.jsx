@@ -4,15 +4,23 @@ import { SingleProduct } from "./product";
 import { Categories } from "../../components/categories";
 import { AiFillCloseCircle } from "react-icons/ai";
 import "./shop.css";
+import banner from "../../assets/shop_banner.png";
 
 export const Shop = () => {
-  const { fulldata, selectCat, closePopup, popup, selectedId, addToCart } =
-    useContext(ShopContext);
-
+  const {
+    fulldata,
+    selectCat,
+    closePopup,
+    popup,
+    selectedId,
+    addToCart,
+    cartItems,
+  } = useContext(ShopContext);
+  const cartItemAmount = cartItems[selectedId];
   return (
     <div className="shop">
+      <img className="banner" src={banner} alt="shop banner" />
       <div className="shopTitle">
-        <h1>FunHub Hunter</h1>
         <div className="categories">
           <Categories />
         </div>
@@ -61,7 +69,8 @@ export const Shop = () => {
                       className="addToCartBttn"
                       onClick={() => addToCart(fulldata[selectedId - 1].id)}
                     >
-                      Add to Cart
+                      Add to Cart{" "}
+                      {cartItemAmount > 0 && <>({cartItemAmount})</>}
                     </button>
                   </div>
                 </div>
