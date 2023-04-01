@@ -1,3 +1,4 @@
+/* Desktop layout */
 .cart {
   display: flex;
   flex-direction: column;
@@ -7,9 +8,8 @@
 
 .cartItem {
   width: 700px;
-  height: 250px;
+  height: 180px;
   display: flex;
-
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -20,9 +20,11 @@
   width: 100px;
   margin: 0 20px;
 }
-
 .cartItem .description {
-  width: 100%;
+  margin-left: 10px;
+  width: 70%;
+}
+.cartItem .description p {
   font-size: 18px;
 }
 
@@ -31,26 +33,31 @@
   text-align: center;
   font-weight: bolder;
 }
+
 .checkout {
   width: 700px;
   align-items: center;
   box-shadow: 0px 3px 8px #4a1f81;
   border-radius: 25px;
 }
+
 .checkout div {
   display: flex;
   justify-content: center;
 }
+
 .checkout p {
   font-size: 20px;
   color: #4a1f81;
   text-align: center;
 }
+
 .checkout button {
   width: 150px;
   height: 50px;
-  background-color: rgb(19, 19, 19);
+  background-color: #4a1f81;
   color: white;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   margin: 10px;
@@ -58,10 +65,11 @@
 }
 
 .checkout button:hover {
-  background-color: #4a1f81;
-  color: white;
+  background-color: #ffd250;
+  color: #4a1f81;
   cursor: pointer;
 }
+
 .backtoshop {
   width: 150px;
   height: 50px;
@@ -71,9 +79,73 @@
   border-radius: 8px;
   margin: 20px;
   cursor: pointer;
+  font-weight: 700;
 }
+
 .backtoshop:hover {
-  background-color: rgb(19, 19, 19);
-  color: white;
+  background-color: #ffd250;
+  color: #4a1f81;
   cursor: pointer;
+}
+
+/* Tablet layout */
+@media only screen and (max-width: 768px) {
+  .cart {
+    padding: 10px;
+  }
+
+  .cartItem {
+    width: 90%;
+    height: 150px;
+    margin: 20px auto;
+    height: fit-content;
+    padding-bottom: 1rem;
+  }
+
+  .cartItem img {
+    width: 80px;
+    margin: 0 10px;
+  }
+
+  .cartItem .description {
+    font-size: 16px;
+  }
+
+  .countHandler input {
+    width: 30px;
+    font-size: 13.5px;
+  }
+
+  .checkout {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .checkout p {
+    font-size: 18px;
+  }
+
+  .checkout button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .backtoshop {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+/* Mobile layout */
+@media only screen and (max-width: 480px) {
+  .cart {
+    padding: 10px;
+  }
+  .cartItem {
+    width: 90%;
+  }
 }

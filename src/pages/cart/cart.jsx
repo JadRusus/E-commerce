@@ -11,9 +11,6 @@ export const Cart = () => {
   const nav = useNavigate();
   return (
     <div className="cart">
-      <div>
-        <h1>Cart Items</h1>
-      </div>
       <div className="cartItems">
         {fulldata.map((value) => {
           if (cartItems[value.id] !== 0)
@@ -24,7 +21,9 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p>
-            <b>Total: ${totalAmount}</b>
+            <b>
+              Total: ${Math.round((totalAmount + Number.EPSILON) * 100) / 100}
+            </b>
           </p>
           <div>
             <button onClick={() => emptyCart()}>Empty Cart</button>

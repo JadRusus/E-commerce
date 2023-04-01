@@ -1,9 +1,13 @@
 .navbar {
-  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
   height: 80px;
   background-color: white;
   font-weight: 500;
   color: rgb(74, 31, 129);
+  border-bottom: 3px solid rgb(74, 31, 129);
 }
 
 .links {
@@ -17,4 +21,7 @@
 .links a {
   text-decoration: none;
   font-size: 15px;
+}
+.links a:hover {
+  color: #ffd250;
 }
