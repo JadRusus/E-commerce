@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <p>
-        This project build by: <b>Amjad Arab</b>
+        This project was built by: <b>Amjad Arab</b>
       </p>
       <p>
         Using: ReactJS <GrReactjs />, JavaScript <DiJavascript />, CSS{" "}
