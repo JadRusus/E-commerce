@@ -4,6 +4,7 @@ import { SingleProduct } from "./product";
 import { Categories } from "../../components/categories";
 import { AiFillCloseCircle } from "react-icons/ai";
 import "./shop.css";
+import banner from "../../assets/shop_banner.png";
 
 export const Shop = () => {
   const {
@@ -18,6 +19,7 @@ export const Shop = () => {
   const cartItemAmount = cartItems[selectedId];
   return (
     <div className="shop">
+      <img className="banner" src={banner} alt="shop banner" />
       <Categories />
 
       <div className="products">

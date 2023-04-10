@@ -1,6 +1,6 @@
 /* Desktop layout */
 .banner {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -57,13 +57,14 @@
 
 .addToCartBttn {
   background-color: transparent;
-  border: 2px solid rgb(19, 19, 19);
+  border: 2px solid rgb(74, 31, 129);
   min-width: 100px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 15px;
+  color: rgb(74, 31, 129);
 }
 
 .addToCartBttn:hover {
